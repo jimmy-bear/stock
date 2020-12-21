@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_buy">
+
+    <fragment
+        android:id="@+id/navigation_myself"
+        android:name="com.example.stock.ui.myself.MySelfFragment"
+        android:label="@string/title_myself"
+        tools:layout="@layout/fragment_myself" />
+
+    <fragment
+        android:id="@+id/navigation_buy"
+        android:name="com.example.stock.ui.buy.BuyFragment"
+        android:label="@string/title_buy"
+        tools:layout="@layout/fragment_buy" />
+
+</navigation>
